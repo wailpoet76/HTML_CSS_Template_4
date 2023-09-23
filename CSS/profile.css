@@ -1,0 +1,487 @@
+/* ************************************* */
+/* ************************************* */
+/*  Start Main */
+/* ************************************* */
+/* ************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+    padding: var(--padding-small10) 0px;
+}
+
+h4 {
+    padding: var(--padding-small10) 0px;
+}
+
+p {
+    font-family: 'cairo', 'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-weight: 600 !important;
+}
+
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.toggle-switch {
+    height: 20px;
+}
+
+.toggle-switch::before {
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    left: 60px !important;
+}
+
+/* ************************************* */
+/*  End Main */
+/* ************************************* */
+
+/* ************************* */
+/* *************************** */
+/* start global variable */
+/* ************************** */
+/* ************************** */
+:root {
+    --padding-large100: 100px;
+    --padding-semilarge50: 50px;
+    --padding-med30: 30px;
+    --padding-small20: 20px;
+    --padding-small10: 10px;
+    --delay-main: 0.5s;
+    --delay-sub-long: 1s;
+    --main-color: #000000;
+    --sec-color: #ffffff;
+    --backcolor: #eee;
+    --third-color: #666;
+    --third-lite-color: #999898;
+    --fourth-color: #ececec;
+    --fourth-Dark-color: rgb(212, 212, 212);
+    --fifth-color: #176ee0;
+    --fifth-Dark-color: #073bca;
+    --fifth-lite-color: #0592f0;
+    --footer-color: #1f1e1e;
+    --font-large48: 3em;
+    --font-med36: 2em;
+    --font-small18_72: 1.17em;
+    --fontwrite16: 1em;
+    --fontwrite-small12_8: .8em;
+
+    --decore-blue: #0075ff;
+    --decore-red: #f00;
+    --decore-orange: #ff7500;
+    --decore-green: #0f0;
+    --decore-green-lite: #00ff75;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--fifth-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fifth-lite-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0px;
+    padding: var(--padding-med30) auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style: none;
+    color: var(--main-color);
+}
+
+i {
+    margin-right: var(--padding-small10);
+}
+
+/* ************************* */
+/* End Global */
+/* ************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Profile widget */
+/* ************************************* */
+/* ************************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start general-Info widget */
+/* ************************************* */
+/* ************************************* */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general-info {
+    /* overflow: auto; */
+    background-color: white;
+    width: 100%;
+}
+
+.general-info .intro {
+    min-width: 200px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.general-info .intro img {
+    width: 40px;
+}
+
+.general-info .intro .level {
+    background-color: var(--fourth-color);
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 10px;
+    height: 10px;
+    position: relative;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.general-info .intro .level span {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 0;
+    border-radius: 6px;
+    background-color: var(--fifth-color);
+    z-index: 2;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.general-info .intro .rating i {
+    margin: 0px;
+}
+
+.general-info .table {
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.general-info .table h4 {
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 15px !important;
+}
+
+.general-info .table .item {
+    overflow: hidden;
+    flex-wrap: wrap;
+    /* background-color: green; */
+    /* justify-content: flex-start; */
+    border-bottom: 1px solid var(--fourth-Dark-color);
+    transition: var(--delay-main);
+    -webkit-transition: var(--delay-main);
+    -moz-transition: var(--delay-main);
+    -ms-transition: var(--delay-main);
+    -o-transition: var(--delay-main);
+}
+
+.general-info .table .item div p {
+    color: var(--fourth-Dark-color) !important;
+}
+
+.general-info .table .item div span {
+    color: var(--main-color) !important;
+}
+
+.general-info .table .item>div {
+    /* max-width: 30%; */
+    min-width: 28%;
+    padding: 10px 20px;
+    /* background-color: red; */
+}
+
+.general-info .table .item:hover {
+    background-color: var(--fourth-color);
+    transition: var(--delay-main);
+    -webkit-transition: var(--delay-main);
+    -moz-transition: var(--delay-main);
+    -ms-transition: var(--delay-main);
+    -o-transition: var(--delay-main);
+}
+
+
+/* ************************************* */
+/*  End general-Info widget */
+/* ************************************* */
+
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Other data widget */
+/* ************************************* */
+/* ************************************* */
+.other-data {
+    width: 100%;
+    display: flex;
+    background-color: transparent;
+}
+
+/* ************************************* */
+/* ************************************* */
+/*  Start My Skills widget */
+/* ************************************* */
+/* ************************************* */
+
+.my-skills {
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.my-skills>h2 {
+    margin-bottom: 30px;
+}
+
+.my-skills>span {
+    color: var(--third-color);
+    font-size: 16px;
+}
+
+.my-skills .skills-section {
+    margin-top: 20px;
+}
+
+.my-skills .skills-section>div {
+    padding: 20px 0px;
+}
+
+.my-skills .skills-section>div:not(:last-child) {
+    border-bottom: 1px solid var(--fourth-color);
+}
+
+.my-skills .skills-section>div span {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: var(--fourth-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+/* ************************************* */
+/*  End My Skills widget */
+/* ************************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Activity widget */
+/* ************************************* */
+/* ************************************* */
+
+.latest-activities {
+    width: 100%;
+}
+
+.latest-activities>h2 {
+    margin-bottom: 20px;
+}
+
+.latest-activities>span {
+    color: var(--third-color);
+    font-size: 16px;
+}
+
+.latest-activities .activity-section>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.latest-activities .activity-section>div:not(:last-child) {
+    border-bottom: 1px solid var(--fourth-Dark-color);
+}
+
+.latest-activities .activity-section img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.latest-activities .activity-section .description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.latest-activities .activity-section .description p {
+    display: block;
+    margin-bottom: 10px;
+    font-size: var(--fontwrite16);
+}
+
+.latest-activities .activity-section .description p:nth-child(2) {
+    display: block;
+    color: var(--third-color);
+    font-size: var(--fontwrite16);
+}
+
+.latest-activities .activity-section .description .left {
+    display: block;
+    margin-left: 10px;
+}
+
+.latest-activities .activity-section .description .right {
+    text-align: end;
+    display: block;
+    /* margin: 20px; */
+}
+
+/* ************************************* */
+/*  End Activity widget */
+/* ************************************* */
+
+/* ************************************* */
+/*  End other data widget */
+/* ************************************* */
+
+/* ************************************* */
+/*  End Profile widget */
+/* ************************************* */
+
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+/*  Start media */
+/* ************************************* */
+/* ************************************* */
+/* ************************************* */
+@media (max-width: 767px) {
+
+    .general-info {
+        margin-left: 10px;
+        margin-right: 10;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .general-info .intro {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    .general-info .table .item {
+        padding: 30px;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+
+    .other-data {
+        flex-wrap: wrap;
+    }
+
+    .my-skills {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .my-skills>div {
+        text-align: center;
+    }
+
+    .latest-activities .activity-section>div {
+        flex-direction: column;
+    }
+
+    .latest-activities .activity-section .description {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .general-info .table {
+        flex-direction: column;
+        width: 100%;
+        margin: 50px 0px;
+    }
+
+    .general-info .table .item {
+        /* padding: 30px; */
+        flex-direction: column;
+        align-items: flex-start;
+        /* background-color: green; */
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .general-info .intro {
+
+        margin: 50px 0px;
+        border-right: 1px solid var(--fourth-Dark-color);
+    }
+}
+
+/* ************************************* */
+/*  End Media */
+/* ************************************* */

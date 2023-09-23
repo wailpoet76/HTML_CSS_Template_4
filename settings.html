@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lion - DashBoard</title>
+    <!-- CSS FrameWork -->
+    <link rel="stylesheet" href="CSS/LionFrameWork.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!-- Awsome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- CSS Main INdex Style -->
+    <link rel="stylesheet" href="CSS/Main.css">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="CSS/settings.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cairo:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-eee">
+
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- Start Aside -->
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <aside>
+        <div class="title">
+            <h3>Lion Coder</h3>
+            <ul>
+                <li>
+                    <a href=" index.html">
+                        <i class="fa-regular fas fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="settings.html">
+                        <i class="fa-regular fas fa-cog fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="profile.html">
+                        <i class="fa-regular far fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="projects.html">
+                        <i class="fa-regular fas fa-project-diagram fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-regular fas fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="friends.html">
+                        <i class="fa-regular far fa-user-circle fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="files.html">
+                        <i class="fa-regular far fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="plans.html">
+                        <i class="fa-regular far fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- ********************************************* -->
+    <!-- End Aside -->
+    <!-- ********************************************* -->
+
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- Start Contents -->
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <!-- ********************************************* -->
+    <div class="container">
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- Start Header -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <header class="bg-white">
+            <div class="left p-relative">
+                <i class="fas fa-search fa-1x p-relative fa-fw"></i>
+                <input id="headerInput" type="search" placeholder="Type A Keyword">
+            </div>
+            <div class="right">
+                <span class="bell p-relative">
+                    <i class="far fa-bell fa-lg fa-regular"></i>
+                </span>
+                <span class="avatar">
+                    <img src="imgs/avatar.png" alt="">
+                </span>
+            </div>
+        </header>
+        <!-- ********************************************* -->
+        <!-- End Header -->
+        <!-- ********************************************* -->
+
+
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- Start Section -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <!-- ********************************************* -->
+        <section>
+            <h1 class="pad-20 p-relative">Settings</h1>
+            <div class="settings-page d-grid gap-20 mar-20">
+
+                <!-- ********************************************* -->
+                <!-- Start Site Control widget-->
+                <!-- ********************************************* -->
+
+                <div class="site-control pad-20 bg-white">
+                    <h2>Site Control</h2>
+                    <span class="c-grey">Control The Website If There Is Maintenance</span>
+                    <div class="d-flex f-spacebetween f-aling">
+                        <div>
+                            <h4>Site Control</h4>
+                            <span class="c-grey marB-20">Open/Close Website And Type The Reason</span>
+                        </div>
+                        <div class=" control ">
+                            <label>
+                                <input type="checkbox" class="toggle-checkbox" name="" id="" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea name="contText" id="contText" class="contText" cols="30" rows="10"
+                        placeholder="Close Message Content"></textarea>
+                </div>
+                <!-- ********************************************* -->
+                <!-- End Site Control widget-->
+                <!-- ********************************************* -->
+
+                <!-- ********************************************* -->
+                <!-- Start General Info widget-->
+                <!-- ********************************************* -->
+
+                <div class="general-info pad-20 bg-white">
+                    <h2>General Info</h2>
+                    <span class="c-grey">General Information About Your Account</span>
+                    <div class="contents">
+                        <form action="" method="get">
+                            <label> First Name </label>
+                            <div>
+                                <input type="text" class="firstName" placeholder="First Name">
+                            </div>
+                            <label> Last Name </label>
+                            <div>
+                                <input type="text" class="lastName" placeholder="Last Name">
+                            </div>
+                            <label>Email</label>
+                            <div>
+                                <input type="email" class="email" placeholder="o@nn.sa" disabled>
+                                <a href="#">Change</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ********************************************* -->
+                <!-- End General Info widget-->
+                <!-- ********************************************* -->
+
+                <!-- ********************************************* -->
+                <!-- Start Security Info widget-->
+                <!-- ********************************************* -->
+
+                <div class="security-info pad-20 bg-white">
+                    <h2>Security Info</h2>
+                    <span class="c-grey">Security Information About Your Account</span>
+                    <div class="contents">
+                        <div>
+                            <label>Password </label>
+                            <div class="d-flex f-spacebetween">
+                                <div>
+                                    <p>Check The Login Devices List </p>
+                                </div>
+                                <div>
+                                    <a href="#">Change</a>
+                                </div>
+                            </div>
+                            <div>
+                                <label>Two-Factor Authentication </label>
+                                <div class="d-flex f-spacebetween">
+                                    <div>
+                                        <p>Enable/Disable The Feature </p>
+                                    </div>
+                                    <div>
+                                        <label class="mid">
+                                            <input type="checkbox" class="toggle-checkbox" name="" id="" checked>
+                                            <div class="toggle-switch"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label>Devices</label>
+                                <div class="d-flex f-spacebetween">
+                                    <div>
+                                        <p>Check The Login Devices List </p>
+                                    </div>
+                                    <div>
+                                        <a class="different" href="#">Devices</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ********************************************* -->
+                <!-- End Security Info widget-->
+                <!-- ********************************************* -->
+
+                <!-- ********************************************* -->
+                <!-- Start Social Info widget-->
+                <!-- ********************************************* -->
+
+                <div class="social-info pad-20 bg-white">
+                    <h2>Social Info</h2>
+                    <span class="c-grey">Social Media Information</span>
+                    <div class="contents">
+                        <div>
+                            <i class="fab fa-twitter fa-regular fa-1x"></i>
+                            <input type="text" class="firstName" placeholder="Twitter Username">
+                        </div>
+                        <div>
+                            <i class="fab fa-facebook-f fa-regular fa-1x"></i>
+                            <input type="text" class="firstName" placeholder="Facebook Username">
+                        </div>
+                        <div>
+                            <i class="fab fa-linkedin fa-regular fa-1x"></i>
+                            <input type="text" class="firstName" placeholder="Linkedin Username">
+                        </div>
+                        <div>
+                            <i class="fab fa-youtube fa-regular fa-1x"></i>
+                            <input type="text" class="firstName" placeholder="Youtube Username">
+                        </div>
+                    </div>
+                </div>
+                <!-- ********************************************* -->
+                <!-- End Social Info widget-->
+                <!-- ********************************************* -->
+
+                <!-- ********************************************* -->
+                <!-- Start widget Control widget-->
+                <!-- ********************************************* -->
+
+                <div class="widget-control pad-20 bg-white">
+                    <h2>Widget Control</h2>
+                    <span class="c-grey">Show/Hide Widgets</span>
+                    <div class="contents">
+                        <div>
+                            <label>
+                                <input type="checkbox" class="d-none" name="wc" id="c1" checked>
+                                Quick Draft
+                                <div class="checkdiv"></div>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="d-none" name="wc" id="c2" checked>
+                                Yearly Targets
+                                <div class="checkdiv"></div>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="d-none" name="wc" id="c3" checked>
+                                Tickets Statistics
+                                <div class="checkdiv"></div>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="d-none" name="wc" id="c4" checked>
+                                Latest News
+                                <div class="checkdiv"></div>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="d-none" name="wc" id="c5">
+                                Latest Tasks
+                                <div class="checkdiv"></div>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" class="d-none" name="wc" id="c6" checked>
+                                Top Search Items
+                                <div class="checkdiv"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- ********************************************* -->
+                <!-- End widget Control widget-->
+                <!-- ********************************************* -->
+
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+                <!-- Start Backup widget-->
+                <!-- ********************************************* -->
+                <!-- ********************************************* -->
+
+                <div class="backup pad-20 bg-white">
+                    <h2>Backup Manager</h2>
+                    <span class="c-grey">Control Backup Time And Location</span>
+                    <div class="contents">
+                        <div class="select">
+                            <div class="case">
+                                <label>
+                                    <input class="d-none" type="radio" name="sel" id="sel1" value="Daily" checked>
+                                    <div class="radio"></div>
+                                    Daily
+                                </label>
+                            </div>
+                            <div class="case">
+                                <label>
+                                    <input class="d-none" type="radio" name="sel" id="sel2" value="Weekly">
+                                    <div class="radio"></div>
+                                    Weekly
+                                </label>
+                            </div>
+                            <div class="case">
+                                <label>
+                                    <input class="d-none" type="radio" name="sel" id="sel3" value="Monthly">
+                                    <div class="radio"></div>
+                                    Monthly
+                                </label>
+                            </div>
+                        </div>
+                        <div class="servers">
+                            <input type="radio" class="d-none" name="server" id="ser1" checked>
+                            <div class="server one">
+                                <label for="ser1">
+                                    <i class="fas fa-server fa-regular fa-1x"></i>Megaman
+                                    <!-- <div class="checkdiv"></div> -->
+                                </label>
+                            </div>
+                            <input type="radio" class="d-none" name="server" id="ser2">
+                            <div class="server two">
+                                <label for="ser2">
+                                    <i class="fas fa-server fa-regular fa-1x"></i>Zero
+                                    <!-- <div class="checkdiv"></div> -->
+                                </label>
+                            </div>
+                            <input type="radio" class="d-none" name="server" id="ser3">
+                            <div class="server three">
+                                <label for="ser3">
+                                    <i class="fas fa-server fa-regular fa-1x"></i>Sigma
+                                    <!-- <div class="checkdiv"></div> -->
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ********************************************* -->
+                <!-- End Backup widget-->
+                <!-- ********************************************* -->
+
+
+                <!-- ********************************************* -->
+                <!-- End Settings-Page after comment -->
+                <!-- ********************************************* -->
+            </div>
+            <!-- ********************************************* -->
+            <!-- End Section after comment-->
+            <!-- ********************************************* -->
+        </section>
+    </div>
+</body>
+
+</html>

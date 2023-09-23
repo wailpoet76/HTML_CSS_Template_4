@@ -1,0 +1,321 @@
+/* ************************************* */
+/* ************************************* */
+/*  Start Main */
+/* ************************************* */
+/* ************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+    padding: var(--padding-small10) 0px;
+}
+
+h4 {
+    padding: var(--padding-small10) 0px;
+}
+
+p {
+    font-family: 'cairo', 'Courier New', Courier, monospace;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.toggle-switch {
+    height: 20px;
+}
+
+.toggle-switch::before {
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    left: 60px !important;
+}
+
+/* ************************************* */
+/*  End Main */
+/* ************************************* */
+
+/* ************************* */
+/* *************************** */
+/* start global variable */
+/* ************************** */
+/* ************************** */
+:root {
+    --padding-large100: 100px;
+    --padding-semilarge50: 50px;
+    --padding-med30: 30px;
+    --padding-small20: 20px;
+    --padding-small10: 10px;
+    --delay-main: 0.5s;
+    --delay-sub-long: 1s;
+    --main-color: #000000;
+    --sec-color: #ffffff;
+    --backcolor: #eee;
+    --third-color: #666;
+    --third-lite-color: #999898;
+    --fourth-color: #ececec;
+    --fourth-Dark-color: rgb(212, 212, 212);
+    --fifth-color: #176ee0;
+    --fifth-Dark-color: #073bca;
+    --fifth-lite-color: #0592f0;
+    --footer-color: #1f1e1e;
+    --font-large48: 3em;
+    --font-med36: 2em;
+    --font-small18_72: 1.17em;
+    --fontwrite16: 1em;
+    --fontwrite-small12_8: .8em;
+
+    --decore-blue: #0075ff;
+    --decore-red: #f00;
+    --decore-orange: #ff7500;
+    --decore-green: #0f0;
+    --decore-green-lite: #00ff75;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--fifth-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fifth-lite-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0px;
+    padding: var(--padding-med30) auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style: none;
+    color: var(--main-color);
+}
+
+i {
+    margin-right: var(--padding-small10);
+}
+
+/* ************************* */
+/* End Global */
+/* ************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Friends Project */
+/* ************************************* */
+/* ************************************* */
+
+.leftside {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.rightside {
+    min-width: 250px;
+    background-color: greenyellow !important;
+}
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Boxing Zone widget */
+/* ************************************* */
+/* ************************************* */
+
+.mainBox {
+    position: relative;
+    min-width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.mainBox .box:hover .logo img {
+    rotate: 5deg;
+}
+
+.mainBox .box .icon i {
+    color: var(--third-color);
+}
+
+.mainBox .box .logo {
+    text-align: center;
+}
+
+.mainBox .box .logo img {
+    width: 80px;
+    transition: var(--delay-main);
+    -webkit-transition: var(--delay-main);
+    -moz-transition: var(--delay-main);
+    -ms-transition: var(--delay-main);
+    -o-transition: var(--delay-main);
+}
+
+.mainBox .box .content-box p:first-child {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.mainBox .box .content-box p:last-child {
+    color: var(--third-color);
+}
+
+.mainBox .box .content-box {
+    border-bottom: 1px solid var(--fourth-Dark-color);
+}
+
+.mainBox .box .file-data {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBox .box .file-data p {
+    color: var(--third-color);
+    font-size: var(--fontwrite-small12_8) !important;
+}
+
+.RightBox {
+    min-width: 250px;
+    height: fit-content;
+}
+
+.RightBox .cont {
+    display: flex;
+    margin: 20px 0px;
+    padding: 10px;
+    border: 1px solid var(--fourth-Dark-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.RightBox .cont .info span {
+    display: block;
+}
+
+.RightBox .cont .size {
+    margin-left: auto;
+}
+
+.RightBox a {
+    display: block;
+    width: fit-content;
+    left: 50%;
+    padding: 10px 20px;
+    transition: 0.3s;
+    position: relative;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.RightBox a::before {
+    position: absolute;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 600;
+    content: "\f102";
+    left: 10px;
+    top: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.RightBox a:hover {
+    background-color: var(--fifth-lite-color);
+}
+
+.RightBox a:hover::before {
+    animation: arrow 0.8s infinite;
+    -webkit-animation: arrow 0.8s infinite;
+}
+
+/***************************************/
+/*EndBoxingZonewidget*/
+/***************************************/
+/***************************************/
+/*EndProjectwidget*/
+/***************************************/
+/***************************************/
+/***************************************/
+/*Startmedia*/
+/***************************************/
+/***************************************/
+@keyframes arrow {
+
+    0%,
+    100% {
+        top: 10px;
+    }
+
+    50% {
+        top: 5px;
+    }
+}
+
+@media(max-width: 767px) {
+    .content-box {
+        /* min-width: 500px; */
+        flex-direction: column-reverse;
+    }
+
+}
+
+/* ************************************* */
+/*  End Media */
+/* ************************************* */

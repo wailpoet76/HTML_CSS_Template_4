@@ -1,0 +1,308 @@
+/* ************************************* */
+/* ************************************* */
+/*  Start Main */
+/* ************************************* */
+/* ************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+    padding: var(--padding-small10) 0px;
+}
+
+h4 {
+    padding: var(--padding-small10) 0px;
+}
+
+p {
+    font-family: 'cairo', 'Courier New', Courier, monospace;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.toggle-switch {
+    height: 20px;
+}
+
+.toggle-switch::before {
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    left: 60px !important;
+}
+
+/* ************************************* */
+/*  End Main */
+/* ************************************* */
+
+/* ************************* */
+/* *************************** */
+/* start global variable */
+/* ************************** */
+/* ************************** */
+:root {
+    --padding-large100: 100px;
+    --padding-semilarge50: 50px;
+    --padding-med30: 30px;
+    --padding-small20: 20px;
+    --padding-small10: 10px;
+    --delay-main: 0.5s;
+    --delay-sub-long: 1s;
+    --main-color: #000000;
+    --sec-color: #ffffff;
+    --backcolor: #eee;
+    --third-color: #666;
+    --third-lite-color: #999898;
+    --fourth-color: #ececec;
+    --fourth-Dark-color: rgb(212, 212, 212);
+    --fifth-color: #176ee0;
+    --fifth-Dark-color: #073bca;
+    --fifth-lite-color: #0592f0;
+    --footer-color: #1f1e1e;
+    --font-large48: 3em;
+    --font-med36: 2em;
+    --font-small18_72: 1.17em;
+    --fontwrite16: 1em;
+    --fontwrite-small12_8: .8em;
+
+    --decore-blue: #0075ff;
+    --decore-red: #f00;
+    --decore-orange: #ff7500;
+    --decore-green: #0f0;
+    --decore-green-lite: #00ff75;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--fifth-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fifth-lite-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0px;
+    padding: var(--padding-med30) auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style: none;
+    color: var(--main-color);
+}
+
+i {
+    margin-right: var(--padding-small10);
+}
+
+/* ************************* */
+/* End Global */
+/* ************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Friends Project */
+/* ************************************* */
+/* ************************************* */
+.wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)) !important;
+}
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Boxing Zone widget */
+/* ************************************* */
+/* ************************************* */
+
+.mainBox {
+    position: relative;
+    min-width: 250px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.mainBox .social i {
+    color: var(--third-color);
+
+    padding: 12px;
+    background-color: var(--fourth-Dark-color);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: var(--delay-main);
+    -webkit-transition: var(--delay-main);
+    -moz-transition: var(--delay-main);
+    -ms-transition: var(--delay-main);
+    -o-transition: var(--delay-main);
+}
+
+.mainBox .social i:hover {
+    color: var(--sec-color);
+    background-color: var(--fifth-lite-color);
+}
+
+.mainBox .logo {
+    position: relative;
+    left: 50%;
+    width: 110px;
+    overflow: hidden;
+    border: 3px solid var(--sec-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.mainBox .logo img {
+    width: 100%;
+}
+
+.mainBox .content-box {
+    text-align: center;
+    margin: 10px 20px;
+    border-bottom: 1px solid var(--fourth-Dark-color);
+}
+
+.mainBox .content-box p {
+    font-size: var(--fontwrite-small12_8) !important;
+    margin-top: -10px;
+}
+
+.mainBox .watched {
+    margin: 20px;
+    border-bottom: 1px solid var(--fourth-Dark-color);
+}
+
+.mainBox .watched i {
+    margin: 5px 0px;
+}
+
+.mainBox .watched span {
+    margin-left: 10px;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px !important;
+}
+
+
+.mainBox .lbl .bar.left>span {
+    color: var(--third-color);
+    font-size: 13px;
+}
+
+
+.mainBox .lbl .bar.right>a {
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: var(--fifth-color);
+    /* position: absolute; */
+    bottom: 45px;
+    left: 50%;
+    color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.mainBox .lbl .bar.right>a:not(:first-child) {
+    background-color: var(--decore-red);
+}
+
+.mainBox .lbl {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: 'cairo', 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+.mainBox .lbl i span {
+    font-size: 14px;
+    font-family: 'cairo', 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color: var(--third-color);
+}
+
+/* ************************************* */
+/*  End Boxing Zone widget */
+/* ************************************* */
+
+/* ************************************* */
+/*  End Project widget */
+/* ************************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start media */
+/* ************************************* */
+/* ************************************* */
+@media (max-width: 767px) {
+    .mainBox {
+        min-width: 500px;
+    }
+}
+
+/* ************************************* */
+/*  End Media */
+/* ************************************* */

@@ -1,0 +1,305 @@
+/* ************************************* */
+/* ************************************* */
+/*  Start Main */
+/* ************************************* */
+/* ************************************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+    padding: var(--padding-small10) 0px;
+}
+
+h4 {
+    padding: var(--padding-small10) 0px;
+}
+
+p {
+    font-family: 'cairo', 'Courier New', Courier, monospace;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+
+span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+.toggle-switch {
+    height: 20px;
+}
+
+.toggle-switch::before {
+    height: 16px;
+    width: 16px;
+    font-size: 10px;
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+    left: 60px !important;
+}
+
+/* ************************************* */
+/*  End Main */
+/* ************************************* */
+
+/* ************************* */
+/* *************************** */
+/* start global variable */
+/* ************************** */
+/* ************************** */
+:root {
+    --padding-large100: 100px;
+    --padding-semilarge50: 50px;
+    --padding-med30: 30px;
+    --padding-small20: 20px;
+    --padding-small10: 10px;
+    --delay-main: 0.5s;
+    --delay-sub-long: 1s;
+    --main-color: #000000;
+    --sec-color: #ffffff;
+    --backcolor: #eee;
+    --third-color: #666;
+    --third-lite-color: #999898;
+    --fourth-color: #ececec;
+    --fourth-Dark-color: rgb(212, 212, 212);
+    --fifth-color: #176ee0;
+    --fifth-Dark-color: #073bca;
+    --fifth-lite-color: #0592f0;
+    --footer-color: #1f1e1e;
+    --font-large48: 3em;
+    --font-med36: 2em;
+    --font-small18_72: 1.17em;
+    --fontwrite16: 1em;
+    --fontwrite-small12_8: .8em;
+
+    --decore-blue: #0075ff;
+    --decore-red: #f00;
+    --decore-orange: #ff7500;
+    --decore-green: #0f0;
+    --decore-green-lite: #00ff75;
+    --decore-green-dark: #22c55e;
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--fifth-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--fifth-lite-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0px;
+    padding: var(--padding-med30) auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+li {
+    list-style: none;
+    color: var(--main-color);
+}
+
+i {
+    margin-right: var(--padding-small10);
+}
+
+/* ************************* */
+/* End Global */
+/* ************************* */
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Plans Project */
+/* ************************************* */
+/* ************************************* */
+.plans-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+.plans-items .box {
+    padding: 20px;
+}
+
+.plans-items .head {
+    background-color: var(--decore-green-dark);
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    border: 6px solid white;
+    position: relative;
+    z-index: 4;
+}
+
+.plans-items .head::before {
+    position: absolute;
+    content: '';
+    background-color: var(--decore-green-dark);
+    /* border: 6px solid red; */
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    z-index: -1;
+    left: -20px;
+    top: -20px;
+}
+
+.plans-items .Basic .head::before {
+    position: absolute;
+    content: '';
+    background-color: var(--decore-blue);
+    /* border: 6px solid red; */
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    z-index: -1;
+    left: -20px;
+    top: -20px;
+}
+
+.plans-items .Basic .head::before {
+    background-color: var(--decore-blue);
+}
+
+.plans-items .Premium .head::before {
+    background-color: var(--decore-orange);
+}
+
+.plans-items .head::after {
+    position: absolute;
+    content: '';
+    border: 3px solid white;
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    z-index: -1;
+    left: -15px;
+    top: -15px;
+}
+
+
+.plans-items .head h2 {
+    color: white;
+    font-size: var(--font-med36);
+    font-weight: 400;
+}
+
+.plans-items .head .currency {
+    position: relative;
+    width: fit-content;
+    font-size: var(--font-large48);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.plans-items .head h2 span {
+    color: white;
+    font-size: var(--fontwrite-small12_8);
+    position: absolute;
+    left: -25px;
+    top: 0px;
+}
+
+.fa-x::before {
+    position: relative;
+    content: '\f00d';
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 600;
+}
+
+.plans-items .box .cont {
+    display: flex;
+    border-bottom: 1px solid var(--fourth-Dark-color);
+    padding: 20px 0px;
+    /* background-color: gray; */
+}
+
+.plans-items .box .cont i.fa-info-circle {
+    margin-left: auto;
+    background-color: white;
+}
+.plans-items .box .cont i.fa-info-circle:hover {
+    cursor: pointer;
+}
+
+.plans-items .box .btn {
+    margin-top: 20px;
+}
+
+.plans-items .box .btn a {
+    margin-top: 40px;
+    background-color: var(--decore-green-dark);
+}
+
+.plans-items .Basic .btn a {
+    background-color: var(--decore-blue);
+}
+
+.plans-items .Premium .btn a {
+    background-color: var(--decore-orange);
+}
+
+/* ************************************* */
+/* ************************************* */
+/*  Start Boxing Zone widget */
+/* ************************************* */
+/* ************************************* */
+
+
+/***************************************/
+/*EndBoxingZonewidget*/
+/***************************************/
+/***************************************/
+/*EndProjectwidget*/
+/***************************************/
+/***************************************/
+/***************************************/
+/*Startmedia*/
+/***************************************/
+/***************************************/
+
+@media(max-width: 767px) {}
+
+/* ************************************* */
+/*  End Media */
+/* ************************************* */
